@@ -55,12 +55,6 @@ reorderMinusTech <- function(medsample) {
   }
   print("Cols ordered")
   # reorder data by given order
-  print(colOrder)
   res<-medsample[rowOrder[,1],colOrder[,1]]
-  print(dim(res)) # [1] 152 298
-  res<-cbind(res, rowOrder)
-  print(dim(res)) # [1] 152 300
-  res<-rbind(res,t(colOrder)) # error numbers of columns of arguments do not match 
-  print(dim(res)) # error, res not found
 }
 
